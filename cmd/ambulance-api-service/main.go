@@ -16,8 +16,6 @@ import (
 	"github.com/kabadrian/ambulance-webapi/internal/db_service"
 )
 
-curl -X POST -H "Content-Type: application/json" -d '{"id":"bobulova","name":"Dr.Bobulová","roomNumber":"123","predefinedConditions":[{"value":"Nádcha","code":"rhinitis"},{"value":"Kontrola","code":"checkup"}]}' http://localhost:8080/api/ambulance
-
 func main() {
 	log.Printf("Server started")
 	port := os.Getenv("AMBULANCE_API_PORT")
