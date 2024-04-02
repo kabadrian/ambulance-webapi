@@ -29,6 +29,9 @@ switch ($command) {
     "mongo" {
         mongo up
     }
+    "docker" {
+       docker build -t kabadrian/ambulance-wl-webapi:local-build -f ${ProjectRoot}/build/docker/Dockerfile .
+    }
     "test" {
         go test -v ./...
     }
